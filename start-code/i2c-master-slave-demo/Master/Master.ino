@@ -1,5 +1,4 @@
 // i2c Master code(master...slave
-// https://www.youtube.com/watch?v=Jndb2vpAWwU
 
 // WIRING DIAGRAM
 /**

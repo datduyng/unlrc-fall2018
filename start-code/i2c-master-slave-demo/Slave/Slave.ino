@@ -1,7 +1,6 @@
 // i2c slave code
 // upload code of the slave first
 // hook them up seperately to upload code
-//https://www.youtube.com/watch?v=Jndb2vpAWwU
 
 #include<Wire.h>
 
