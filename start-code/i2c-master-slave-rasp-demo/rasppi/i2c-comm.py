@@ -1,5 +1,13 @@
-# base on: pinout.xyz/pinout/i2c
+'''
+base on: pinout.xyz/pinout/i2c
+i2c configure on rasp pi
+https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c
 
+these command will help you out 
+sudo i2cdetect -y 1 # list all address on i2c bus 
+
+
+'''
 import smbus 
 
 DEVICE_BUS = 1
@@ -7,10 +15,10 @@ DEVICE_ADD = 0x15
 bus = smbus.SMBus(DEVICE_BUS)
 
 #slave_address 1 
-address = 0x04
+address = 0x04 # motor 
 
 #slave_address 2
-address_2 = 0x05 
+address_2 = 0x05 #light
 
 
 def writeNumber(value, toAddress):
